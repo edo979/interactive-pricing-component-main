@@ -1,0 +1,7 @@
+$break-point: 500px;
+
+@mixin mq {
+  @media (min-width: $break-point) {
+    @content;
+  }
+}
