@@ -1,9 +1,11 @@
 body {
-  background-color: whitesmoke;
   display: grid;
   place-content: center;
 
   background-color: $Very-Pale-Blue;
+  background-image: url('../images/bg-pattern.svg');
+  background-repeat: no-repeat;
+  background-position: left -25px;
 }
 
 @import '../components/card';

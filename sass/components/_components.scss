@@ -1,3 +1,29 @@
+.container {
+  margin: 25px;
+}
+
+// Header background
+.header {
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding: 50px 0 35px;
+
+  text-align: center;
+
+  background-image: url(../images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-size: 150px;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    padding-inline: 75px;
+  }
+}
+
 // List and list item
 .services {
   list-style: none;
@@ -27,6 +53,7 @@
   }
 }
 
+// Button
 .btn {
   border: none;
   padding: 15px 50px;

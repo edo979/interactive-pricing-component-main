@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
 html {
   font-size: 15px;
 }
@@ -34,8 +41,9 @@ li,
 }
 
 .lead {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   font-weight: 600;
+  line-height: 1.8;
 }
 
 .big-text {
@@ -55,10 +63,12 @@ p {
 }
 
 body {
-  background-color: whitesmoke;
   display: grid;
   place-content: center;
   background-color: #fafbff;
+  background-image: url("../images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: left -25px;
 }
 
 .card {
@@ -107,6 +117,27 @@ body {
 .period__discount::after {
   content: "-25%";
   color: #ff8c66;
+}
+
+.container {
+  margin: 25px;
+}
+
+.header {
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding: 50px 0 35px;
+  text-align: center;
+  background-image: url(../images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-size: 150px;
+}
+.header__title {
+  margin-bottom: 10px;
+}
+.header__text {
+  padding-inline: 75px;
 }
 
 .services {
