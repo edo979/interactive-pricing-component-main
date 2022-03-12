@@ -47,7 +47,7 @@ li,
 }
 
 .big-text {
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 .lg-text {
@@ -73,6 +73,7 @@ body {
 
 .card {
   max-width: 400px;
+  min-width: 325px;
   border-radius: 10px;
   background-color: white;
 }
@@ -95,6 +96,7 @@ body {
 }
 
 .pricing__pageviews {
+  margin: 10px 0 35px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -107,16 +109,50 @@ body {
   min-width: 100%;
   background-color: gray;
 }
+.pricing__price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 50px 0 45px;
+}
+
 .period {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.period__toggle {
+  position: relative;
+  width: 43px;
+  height: 22px;
+  border-radius: 20px;
+  background-color: #cdd7ee;
+}
+.period__toggle-button {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
 }
 .period__discount {
   position: relative;
 }
 .period__discount::after {
+  position: absolute;
   content: "-25%";
+  top: -8px;
+  left: -6px;
+  padding: 4px 8px;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  font-weight: 800;
   color: #ff8c66;
+  background-color: #feece7;
 }
 
 .container {
