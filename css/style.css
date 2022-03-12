@@ -60,7 +60,6 @@ body {
   max-width: 400px;
   border-radius: 10px;
   background-color: white;
-  outline: 2px black solid;
 }
 .card__body {
   padding: 25px;
@@ -80,21 +79,46 @@ body {
   align-items: center;
 }
 
-.pricing__pageviews {
-  outline: 2px solid aqua;
-}
 .pricing__slider {
   width: 100%;
   height: 5px;
   min-width: 100%;
   background-color: gray;
 }
-.pricing__price {
-  outline: 2px solid violet;
-}
-
 .period {
   display: flex;
+  justify-content: center;
+}
+.period__discount {
+  position: relative;
+}
+.period__discount::after {
+  content: "-25%";
+  color: #ff8c66;
+}
+
+.services {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services, .services__item {
+  margin: 0;
+  padding: 0;
+}
+.services__item {
+  position: relative;
+}
+.services__item::before {
+  content: " ";
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  top: 5px;
+  left: -20px;
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
 }
 
 @media (min-width: 500px) {
