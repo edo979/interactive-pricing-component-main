@@ -27,7 +27,7 @@
   <body>
     <header class="container header">
       <h1 class="header__title">Simple, traffic-based pricing</h1>
-      <p class="header__text">
+      <p class="header__text lead">
         Sign-up for our 30-day trial. No credit card required.
       </p>
     </header>
@@ -35,15 +35,24 @@
     <main class="container card">
       <div class="card__body">
         <div class="pricing">
-          <div class="pricing__pageviews">100K Pageviews</div>
+          <div class="pricing__pageviews">
+            <p class="lead">100K Pageviews</p>
+          </div>
           <div class="pricing__slider"></div>
-          <div class="pricing__price">$16.00 /month</div>
+          <div class="pricing__price">
+            <span class="big-text">$16.00</span>
+            <span class="lead">/month</span>
+          </div>
         </div>
 
         <div class="period">
-          <div class="period__monthly">Monthly Billing</div>
+          <div class="period__monthly">
+            <p class="small-text">Monthly Billing</p>
+          </div>
           <div class="period__toggle"></div>
-          <div class="period__yearly">Yearly Billing</div>
+          <div class="period__yearly">
+            <p class="small-text">Yearly Billing</p>
+          </div>
           <div class="period__discount">25% discount</div>
         </div>
       </div>
@@ -52,9 +61,9 @@
 
       <div class="card__footer">
         <ul class="services">
-          <li class="services__item">Unlimited websites</li>
-          <li class="services__item">100% data ownership</li>
-          <li class="services__item">Email reports</li>
+          <li class="services__item small-text">Unlimited websites</li>
+          <li class="services__item small-text">100% data ownership</li>
+          <li class="services__item small-text">Email reports</li>
         </ul>
 
         <button class="btn">Start my trial</button>

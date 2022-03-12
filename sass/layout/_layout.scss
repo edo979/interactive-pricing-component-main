@@ -2,6 +2,8 @@ body {
   background-color: whitesmoke;
   display: grid;
   place-content: center;
+
+  background-color: $Very-Pale-Blue;
 }
 
 @import '../components/card';

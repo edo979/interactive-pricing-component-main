@@ -1,3 +1,5 @@
 @use 'abstracts/vars' as *;
 
+@import 'base/reset';
+@import 'base/typography';
 @import 'layout/layout';
