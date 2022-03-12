@@ -10,7 +10,7 @@
 
   &__divider {
     height: 1px;
-    background-color: gray;
+    background-color: $Light-Grayish-Blue-100;
   }
 
   &__footer {
@@ -27,6 +27,12 @@
 
 .pricing {
   &__pageviews {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    p {
+      font-weight: 800;
+    }
   }
 
   &__slider {

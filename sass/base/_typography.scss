@@ -29,17 +29,22 @@ h2,
 
 p,
 .lead,
-li {
-  font-weight: 600;
+li,
+.lg-text {
   color: $Grayish-Blue;
 }
 
 .lead {
-  font-size: 0.875rem;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 .big-text {
   font-size: 2rem;
+}
+
+.lg-text {
+  font-size: 0.95rem;
 }
 
 p {

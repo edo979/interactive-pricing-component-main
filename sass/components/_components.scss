@@ -26,3 +26,16 @@
     }
   }
 }
+
+.btn {
+  border: none;
+  padding: 15px 50px;
+  border-radius: 30px;
+
+  font-family: inherit;
+  font-size: 0.8rem;
+  line-height: 1.1;
+
+  background-color: $Dark-Desaturated-Blue;
+  color: mix($Pale-Blue, white, 50%);
+}

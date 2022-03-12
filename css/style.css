@@ -28,17 +28,22 @@ h2,
 
 p,
 .lead,
-li {
-  font-weight: 600;
+li,
+.lg-text {
   color: #858fad;
 }
 
 .lead {
-  font-size: 0.875rem;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 .big-text {
   font-size: 2rem;
+}
+
+.lg-text {
+  font-size: 0.95rem;
 }
 
 p {
@@ -66,7 +71,7 @@ body {
 }
 .card__divider {
   height: 1px;
-  background-color: gray;
+  background-color: #eaeefb;
 }
 .card__footer {
   padding: 25px;
@@ -79,6 +84,13 @@ body {
   align-items: center;
 }
 
+.pricing__pageviews {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.pricing__pageviews p {
+  font-weight: 800;
+}
 .pricing__slider {
   width: 100%;
   height: 5px;
@@ -119,6 +131,17 @@ body {
   left: -20px;
   background-image: url(../images/icon-check.svg);
   background-size: contain;
+}
+
+.btn {
+  border: none;
+  padding: 15px 50px;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  line-height: 1.1;
+  background-color: #293356;
+  color: #dee6ff;
 }
 
 @media (min-width: 500px) {
