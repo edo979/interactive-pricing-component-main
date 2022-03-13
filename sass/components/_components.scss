@@ -39,6 +39,7 @@
 
   &__item {
     position: relative;
+    margin-bottom: 15px;
 
     &::before {
       content: ' ';
@@ -56,7 +57,7 @@
 // Button
 .btn {
   border: none;
-  padding: 15px 50px;
+  padding: 15px 45px;
   border-radius: 30px;
 
   font-family: inherit;
@@ -64,5 +65,5 @@
   line-height: 1.1;
 
   background-color: $Dark-Desaturated-Blue;
-  color: mix($Pale-Blue, white, 50%);
+  color: mix($Pale-Blue, white, 70%);
 }

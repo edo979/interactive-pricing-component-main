@@ -87,6 +87,9 @@ body {
 .card__footer {
   padding: 25px;
 }
+.card__footer .btn {
+  margin: 20px 0 10px;
+}
 
 .card__footer,
 .pricing {
@@ -107,7 +110,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 45px 0 40px;
+  margin: 45px 0 35px;
 }
 
 .slider {
@@ -214,6 +217,7 @@ body {
 }
 .services__item {
   position: relative;
+  margin-bottom: 15px;
 }
 .services__item::before {
   content: " ";
@@ -228,13 +232,13 @@ body {
 
 .btn {
   border: none;
-  padding: 15px 50px;
+  padding: 15px 45px;
   border-radius: 30px;
   font-family: inherit;
   font-size: 0.8rem;
   line-height: 1.1;
   background-color: #293356;
-  color: #dee6ff;
+  color: #d1dbff;
 }
 
 @media (min-width: 500px) {

@@ -16,6 +16,10 @@
 
   &__footer {
     padding: $container-padding;
+
+    .btn {
+      margin: 20px 0 10px;
+    }
   }
 }
 
@@ -42,7 +46,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 45px 0 40px;
+    margin: 45px 0 35px;
   }
 }
 
