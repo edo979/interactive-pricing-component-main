@@ -54,6 +54,18 @@
   }
 }
 
+@include mq {
+  .services {
+    align-items: start;
+
+    &__item {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 // Button
 .btn {
   border: none;

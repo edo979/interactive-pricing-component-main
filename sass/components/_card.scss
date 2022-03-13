@@ -1,11 +1,12 @@
 .card {
   $container-padding: 25px;
-  max-width: 400px;
+  max-width: 540px;
   min-width: 325px;
   border-radius: 8px;
   background-color: white;
 
-  &__body {
+  &__body,
+  &__footer {
     padding: $container-padding;
   }
 
@@ -15,8 +16,6 @@
   }
 
   &__footer {
-    padding: $container-padding;
-
     .btn {
       margin: 20px 0 10px;
     }
@@ -99,17 +98,57 @@
 @import '../components/components';
 
 @include mq {
+  .card {
+    $container-padding: 50px;
+
+    &__body,
+    &__footer {
+      padding: $container-padding;
+    }
+
+    &__body {
+      padding-bottom: 30px;
+    }
+
+    &__footer {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-block: 30px;
+
+      .btn {
+        margin: 0;
+      }
+    }
+  }
+
   .pricing {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 45px;
+    margin-bottom: 45px;
 
-    &__price,
     &__pageviews {
-      flex: 1 1 50%;
+      margin: 0;
+    }
+
+    &__price {
+      margin: 0;
     }
 
     &__slider {
       order: 3;
+    }
+  }
+
+  .period {
+    margin-bottom: 0;
+    &__discount {
+      &::after {
+        content: '25% discount';
+        font-family: inherit;
+        width: 72px;
+      }
     }
   }
 }

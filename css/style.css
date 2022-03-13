@@ -72,20 +72,17 @@ body {
 }
 
 .card {
-  max-width: 400px;
+  max-width: 540px;
   min-width: 325px;
   border-radius: 8px;
   background-color: white;
 }
-.card__body {
+.card__body, .card__footer {
   padding: 25px;
 }
 .card__divider {
   height: 1px;
   background-color: #eaeefb;
-}
-.card__footer {
-  padding: 25px;
 }
 .card__footer .btn {
   margin: 20px 0 10px;
@@ -230,6 +227,14 @@ body {
   background-size: contain;
 }
 
+@media (min-width: 500px) {
+  .services {
+    align-items: start;
+  }
+  .services__item:last-child {
+    margin-bottom: 0;
+  }
+}
 .btn {
   border: none;
   padding: 15px 45px;
@@ -242,15 +247,45 @@ body {
 }
 
 @media (min-width: 500px) {
+  .card__body, .card__footer {
+    padding: 50px;
+  }
+  .card__body {
+    padding-bottom: 30px;
+  }
+  .card__footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block: 30px;
+  }
+  .card__footer .btn {
+    margin: 0;
+  }
+
   .pricing {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 45px;
+    margin-bottom: 45px;
   }
-  .pricing__price, .pricing__pageviews {
-    flex: 1 1 50%;
+  .pricing__pageviews {
+    margin: 0;
+  }
+  .pricing__price {
+    margin: 0;
   }
   .pricing__slider {
     order: 3;
+  }
+
+  .period {
+    margin-bottom: 0;
+  }
+  .period__discount::after {
+    content: "25% discount";
+    font-family: inherit;
+    width: 72px;
   }
 }
 
