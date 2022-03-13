@@ -31,7 +31,7 @@
 
 .pricing {
   &__pageviews {
-    margin: 10px 0 35px;
+    margin: 10px 0 15px;
 
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -49,7 +49,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 45px 0 35px;
+    margin: 25px 0 40px;
   }
 }
 
@@ -60,7 +60,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   &__toggle {
     position: relative;
@@ -117,7 +117,7 @@
     &__footer {
       flex-direction: row;
       justify-content: space-between;
-      padding-block: 30px;
+      padding-block: 35px;
 
       .btn {
         margin: 0;
@@ -129,11 +129,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 45px;
-    margin-bottom: 45px;
+    row-gap: 30px;
+    margin-bottom: 40px;
 
     &__pageviews {
       margin: 0;
+      letter-spacing: 1.5px;
     }
 
     &__price {
@@ -146,7 +147,7 @@
   }
 
   .period {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     &__discount {
       &::after {
         content: '25% discount';
