@@ -54,18 +54,6 @@
   }
 }
 
-@include mq {
-  .services {
-    align-items: start;
-
-    &__item {
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-}
-
 // Button
 .btn {
   border: none;
@@ -78,4 +66,25 @@
 
   background-color: $Dark-Desaturated-Blue;
   color: mix($Pale-Blue, white, 70%);
+}
+
+@include mq {
+  .header {
+    margin: 65px 0 10px;
+    padding-bottom: 50px;
+
+    &__text {
+      font-size: 1.075rem;
+    }
+  }
+
+  .services {
+    align-items: start;
+
+    &__item {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

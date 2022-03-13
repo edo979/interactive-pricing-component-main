@@ -63,8 +63,13 @@ p {
 }
 
 @media (min-width: 500px) {
+  h1,
+.h1 {
+    font-size: 2rem;
+  }
+
   .lead {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .lg-text {
@@ -327,14 +332,6 @@ body {
   background-size: contain;
 }
 
-@media (min-width: 500px) {
-  .services {
-    align-items: start;
-  }
-  .services__item:last-child {
-    margin-bottom: 0;
-  }
-}
 .btn {
   border: none;
   padding: 15px 45px;
@@ -346,6 +343,22 @@ body {
   color: #d1dbff;
 }
 
+@media (min-width: 500px) {
+  .header {
+    margin: 65px 0 10px;
+    padding-bottom: 50px;
+  }
+  .header__text {
+    font-size: 1.075rem;
+  }
+
+  .services {
+    align-items: start;
+  }
+  .services__item:last-child {
+    margin-bottom: 0;
+  }
+}
 @media (min-width: 500px) {
   .card__body, .card__footer {
     padding: 50px;
@@ -371,7 +384,7 @@ body {
   }
   .pricing__pageviews {
     margin: 0;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.8px;
   }
   .pricing__price {
     margin: 0;
@@ -387,6 +400,14 @@ body {
     content: "25% discount";
     font-family: inherit;
     width: 72px;
+  }
+}
+@media (min-width: 500px) {
+  body {
+    max-width: 1440px;
+    margin: auto;
+    background-position: center;
+    background-position-y: 0;
   }
 }
 

@@ -9,3 +9,12 @@ body {
 }
 
 @import '../components/card';
+
+@include mq {
+  body {
+    max-width: 1440px;
+    margin: auto;
+    background-position: center;
+    background-position-y: 0;
+  }
+}
