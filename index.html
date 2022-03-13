@@ -38,11 +38,18 @@
           <div class="pricing__pageviews">
             <p class="lead">100K Pageviews</p>
           </div>
-          <div class="pricing__slider slider">
-            <div class="slider__container">
-              <div id="sliderbar" class="slider__sliderbar"></div>
-            </div>
-            <div id="slider-button" class="slider__button"></div>
+          <div class="pricing__slider">
+            <input
+              type="range"
+              name="slider"
+              id="slider"
+              class="slider"
+              value="50"
+              min="0"
+              max="100"
+              style="--min: 0; --max: 100; --val: 50"
+              )
+            />
           </div>
           <div class="pricing__price">
             <span class="big-text">$16.00</span>
@@ -85,5 +92,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
