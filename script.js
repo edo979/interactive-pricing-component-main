@@ -23,7 +23,7 @@ _R.addEventListener(
 )
 
 toggleEl.addEventListener('click', (e) => {
-  e.target.classList.toggle('active')
+  e.target.parentElement.classList.toggle('active')
   isDiscount = !isDiscount
 
   calculateData(currentInputData)
