@@ -94,6 +94,7 @@ body {
   min-width: 325px;
   border-radius: 8px;
   background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 .card__body, .card__footer {
   padding: 25px;
@@ -194,6 +195,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 20px 25px rgba(16, 213, 194, 0.5);
+  cursor: pointer;
 }
 .slider::-webkit-slider-thumb:active {
   background-color: #0daa9b;
@@ -209,6 +211,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 20px 25px rgba(16, 213, 194, 0.5);
+  cursor: pointer;
 }
 .slider::-moz-range-thumb:active {
   background-color: #0daa9b;
@@ -225,6 +228,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 20px 25px rgba(16, 213, 194, 0.5);
+  cursor: pointer;
 }
 .slider::-ms-thumb:active {
   background-color: #0daa9b;
