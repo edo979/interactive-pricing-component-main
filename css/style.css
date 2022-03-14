@@ -352,6 +352,7 @@ body {
   line-height: 1.1;
   background-color: #293356;
   color: #d1dbff;
+  cursor: pointer;
 }
 
 @media (min-width: 500px) {

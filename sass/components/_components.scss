@@ -66,6 +66,8 @@
 
   background-color: $Dark-Desaturated-Blue;
   color: mix($Pale-Blue, white, 70%);
+
+  cursor: pointer;
 }
 
 @include mq {
